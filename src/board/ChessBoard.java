@@ -219,14 +219,14 @@ public class ChessBoard extends JPanel {
 
          if (isMoveCheckingKing(move)) {
             if (isWhitesTurn) {
-               handleTimeCheckMate();
                System.out.println("White check!");
             } else {
                handleTimeCheckMate();
                System.out.println("Black check!");
             }
-
+            
             if (isCheckmate(!isWhitesTurn)) {
+               handleTimeCheckMate();
                if (isWhitesTurn) {
                   System.out.println("White checkmate!");
                } else {
